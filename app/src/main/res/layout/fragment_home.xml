@@ -7,12 +7,18 @@
     android:background="@color/white"
     tools:context=".ui.home.HomeFragment"
     android:orientation="vertical">
-
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
         android:orientation="horizontal">
 
         <HorizontalScrollView
@@ -33,8 +39,8 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="66dp"
-                        android:layout_height="66dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/man"
                         app:civ_border_color="@color/instacenterclord"
                         app:civ_border_width="2dp" />
@@ -57,8 +63,8 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="66dp"
-                        android:layout_height="66dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/man2"
                         app:civ_border_color="@color/instacenterclord"
                         app:civ_border_width="2dp" />
@@ -81,8 +87,8 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="66dp"
-                        android:layout_height="66dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/heart"
                         app:civ_border_color="@color/instacenterclord"
                         app:civ_border_width="2dp" />
@@ -105,8 +111,8 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="66dp"
-                        android:layout_height="66dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/watchingtv"
                         app:civ_border_color="@color/instacenterclord"
                         app:civ_border_width="2dp" />
@@ -129,8 +135,8 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="66dp"
-                        android:layout_height="66dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/plus"
                         app:civ_border_color="@color/instacenterclord"
                         app:civ_border_width="2dp" />
@@ -153,8 +159,8 @@
                     android:orientation="vertical">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:layout_width="66dp"
-                        android:layout_height="66dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:src="@drawable/send"
                         app:civ_border_color="@color/instacenterclord"
                         app:civ_border_width="2dp" />
@@ -180,9 +186,7 @@
         android:layout_marginBottom="3dp"
         android:background="@color/statusbarcolor" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -192,8 +196,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
@@ -222,16 +226,15 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"
+                    android:rotation="90"
                     android:src="@drawable/menu"/>
             </LinearLayout>
-
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="380dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/man2" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
@@ -240,20 +243,22 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:id="@+id/heart_love"
+                    android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:src="@drawable/heart" />
+                    android:clickable="true"
+                    android:src="@drawable/heart"/>
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:scaleX="-1"
                     android:src="@drawable/speechbubble"/>
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:rotation="22"
@@ -264,22 +269,135 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right"
+                    android:layout_marginRight="9dp"
                     android:orientation="horizontal"
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="26dp"
                         android:layout_height="wrap_content"
                         android:src="@drawable/bookmark"/>
                 </LinearLayout>
 
             </LinearLayout>
+            <TextView
+                android:id="@+id/likecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="17,589 likes"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="Sabbir Ahmed"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="Nature is the best place og. #pro"
+                    android:textColor="@color/textcolor"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="View all 40 comments"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:textColor="@color/opacitytextcolor"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="Tareq Hasan"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="Nice Picture"
+                    android:textColor="@color/textcolor"/>
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/heart"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="Belayet Hossain"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="Awesome bro"
+                    android:textColor="@color/textcolor"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="7dp"
+                android:text="16 HOURS AGO"
+                android:textSize="10sp"
+                android:textColor="@color/opacitytextcolor"/>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
@@ -297,7 +415,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
-                    android:text="Belayet"
+                    android:text="Belayet Hossain"
                     android:textColor="@color/textcolor"
                     android:textStyle="bold" />
 
@@ -306,15 +424,14 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp"
+                    android:rotation="90"
                     android:src="@drawable/menu"/>
             </LinearLayout>
-
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="400dp"
+                android:layout_height="380dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/man" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
@@ -323,20 +440,20 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:src="@drawable/heart" />
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:scaleX="-1"
                     android:src="@drawable/speechbubble"/>
 
                 <ImageView
-                    android:layout_width="50dp"
+                    android:layout_width="42dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:rotation="22"
@@ -347,18 +464,133 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right"
+                    android:layout_marginRight="9dp"
                     android:orientation="horizontal"
                     android:padding="8dp">
 
                     <ImageView
-                        android:layout_width="wrap_content"
+                        android:layout_width="26dp"
                         android:layout_height="wrap_content"
                         android:src="@drawable/bookmark"/>
                 </LinearLayout>
 
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:text="10,589 likes"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="Belayet Hossain"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="My life is a blackhole. #sad"
+                    android:textColor="@color/textcolor"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="View all 12 comments"
+                android:textColor="@color/opacitytextcolor"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="Tareq Hasan"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="Nice Picture"
+                    android:textColor="@color/textcolor"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="Belayet Hossain"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="Awesome bro"
+                    android:textColor="@color/textcolor"/>
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/heart"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="7dp"
+                android:text="4 HOURS AGO"
+                android:textSize="10sp"
+                android:textColor="@color/opacitytextcolor"/>
+
+
+
 
         </LinearLayout>
+
+</LinearLayout>
     </ScrollView>
 
 </LinearLayout>

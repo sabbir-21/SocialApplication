@@ -18,11 +18,11 @@
     <item
         android:id="@+id/navigation_heart"
         android:icon="@drawable/heart"
-        android:title="@string/title_search" />
+        android:title="@string/title_heart" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/user"
-        android:title="@string/title_plus" />
+        android:title="@string/title_profile" />
 
 </menu>
