@@ -43,7 +43,7 @@
                         android:layout_height="60dp"
                         android:src="@drawable/man"
                         app:civ_border_color="@color/instacenterclord"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_width="3dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
                         android:layout_height="60dp"
                         android:src="@drawable/man2"
                         app:civ_border_color="@color/instacenterclord"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_width="3dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -91,7 +91,7 @@
                         android:layout_height="60dp"
                         android:src="@drawable/heart"
                         app:civ_border_color="@color/instacenterclord"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_width="3dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -115,7 +115,7 @@
                         android:layout_height="60dp"
                         android:src="@drawable/watchingtv"
                         app:civ_border_color="@color/instacenterclord"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_width="3dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -139,7 +139,7 @@
                         android:layout_height="60dp"
                         android:src="@drawable/plus"
                         app:civ_border_color="@color/instacenterclord"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_width="3dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -163,7 +163,7 @@
                         android:layout_height="60dp"
                         android:src="@drawable/send"
                         app:civ_border_color="@color/instacenterclord"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_width="3dp" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -198,7 +198,7 @@
                 android:layout_height="42dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="-5dp"
                 android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
 
@@ -232,7 +232,7 @@
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
-                android:layout_height="380dp"
+                android:layout_height="350dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/man2" />
             <LinearLayout
@@ -269,7 +269,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:layout_marginRight="9dp"
                     android:orientation="horizontal"
                     android:padding="8dp">
 
@@ -324,16 +323,16 @@
                     android:layout_marginBottom="2dp"
                     android:textColor="@color/opacitytextcolor"/>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:orientation="horizontal"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
                     android:text="Tareq Hasan"
                     android:textColor="@color/textcolor"
                     android:textStyle="bold" />
@@ -353,15 +352,15 @@
                         android:src="@drawable/heart"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
                     android:text="Belayet Hossain"
                     android:textColor="@color/textcolor"
                     android:textStyle="bold" />
@@ -397,8 +396,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginRight="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="-5dp"
                 android:layout_marginBottom="4dp"
                 android:orientation="horizontal">
 
@@ -429,7 +428,7 @@
             </LinearLayout>
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="380dp"
+                android:layout_height="350dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/man" />
             <LinearLayout
@@ -464,7 +463,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="right"
-                    android:layout_marginRight="9dp"
                     android:orientation="horizontal"
                     android:padding="8dp">
 
@@ -518,16 +516,16 @@
                 android:text="View all 12 comments"
                 android:textColor="@color/opacitytextcolor"/>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_marginBottom="2dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
                     android:text="Tareq Hasan"
                     android:textColor="@color/textcolor"
                     android:textStyle="bold" />
@@ -547,15 +545,15 @@
                     android:src="@drawable/heart"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="16dp"
-                    android:layout_weight="1"
                     android:text="Belayet Hossain"
                     android:textColor="@color/textcolor"
                     android:textStyle="bold" />

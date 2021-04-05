@@ -1,10 +1,14 @@
 package com.invissibleapps.socialapplication;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -20,14 +24,22 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
 
-        //error solved by this 1 and 2 comment
-        //Attempt to invoke virtual method 'void androidx.appcompat.app.ActionBar.setTitle(java.lang.CharSequence)' on a null object reference
-        /*1. AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+        /* AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_heart, R.id.navigation_profile)
                 .build(); */
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
        //2. NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        //nav menu selected and fragment transition
         NavigationUI.setupWithNavController(navView, navController);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        ImageView cameraToolbar = toolbar.findViewById(R.id.camera);
+        cameraToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Camera Clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 }
